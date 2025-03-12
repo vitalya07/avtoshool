@@ -58,12 +58,18 @@
                 position: absolute;
                 top: 45px;
                 left: -25px;
-                width: 248px;
+                min-width: 248px;
                 min-height: 236px;
                 padding: 22px;
                 background-color: $darkColor;     
                 visibility: hidden;
-                opacity: 0;           
+                opacity: 0;   
+                &.two {
+                    width: 435px;
+                }   
+                &.three {
+                    width: 354px;
+                }     
             }
             &--el {
                 margin-bottom: 32px;
