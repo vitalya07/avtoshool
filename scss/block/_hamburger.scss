@@ -1,0 +1,27 @@
+.hamburger {
+    width: 80px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    span {
+        display: block;
+        width: 40px;
+        height: 3px;
+        border-radius: 76px;
+        background-color: $blueColor;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:first-child {
+            top: 35%;
+        }
+        &:nth-child(2) {
+            top: 50%;
+        }
+        &:last-child {
+            top: 65%;
+        }
+    }
+}

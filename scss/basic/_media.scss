@@ -1,0 +1,68 @@
+@media (max-width: 1200px) {
+    .header {
+        &__name {
+            display: none;
+        }
+    }
+}
+@media (max-width: 993px) {
+    .header {
+        &__name {
+            display: block;
+            font-size: 14px;
+            max-width: 210px;
+            margin-right: 40%;
+        }
+        &__time, &__phone {
+            display: none;
+        }
+        &__feedback {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+}
+@media (max-width: 769px) {
+    .header {
+        &__logo {
+            max-width: 100px;
+            height: 45px;
+        }
+        &__name {
+            margin-right: 30%;
+        }
+    }
+}
+@media (max-width: 556px) {
+    .header {
+        &__logo {
+            max-width: 70px;
+            height: 30px;
+        }
+        &__name {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;         
+            font-size: 12px;
+            margin-right: 0;
+            max-width: 170px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        &__time, &__phone {
+            display: none;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .header {
+        &__time, &__phone {
+            display: none;
+        }
+    }
+}

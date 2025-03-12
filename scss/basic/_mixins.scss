@@ -1,0 +1,35 @@
+@mixin title {
+    font-family: 'Inter' sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -2%;
+    color: $darkColor;
+}
+@mixin subttitle {
+    font-family: 'Onest' sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $darkColor;
+}
+@mixin wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+};
+@mixin button {
+    border: none;
+    cursor: pointer;
+    color: $whiteColor;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
