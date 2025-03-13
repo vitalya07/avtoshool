@@ -2,3 +2,13 @@
     max-width: 1250px;
     margin: 0 auto;
 }
+.show {
+    // visibility: visible;
+    // opacity: 1;
+    display: block;
+}
+.hide {
+    // visibility: hidden;
+    // opacity: 0;
+    display: none;
+}

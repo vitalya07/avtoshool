@@ -23,7 +23,38 @@
     .hamburger {
         display: block;
     }
+    .nav {
+        height: 100vh;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &__list {
+            display: block;
+            padding: 70px;       
+            &-item {
+                margin-bottom: 20px;
+                &--menu {
+                    &::after {
+                        left: -21px;
+                    }
+                    &::before {
+                        left: -15px;
+                    }
+                }
+                &--list {
+                   padding-top: 2px;
+                   top: 22px;
+                   position: static;
+                }
+                &--el {
+                    margin-bottom: 5px;
+                }
+            }    
+        }
+    }
 }
+
 @media (max-width: 769px) {
     .header {
         &__logo {

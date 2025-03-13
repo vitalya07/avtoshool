@@ -4,34 +4,48 @@ document.addEventListener('DOMContentLoaded', ()=> {
           listMenu = document.querySelectorAll('.nav__list-item--list');
 
     listItem.forEach((item, i)=> {
-        item.addEventListener('mouseenter', ()=> {
-            listMenu[i].style.cssText = `
-                visibility: visible;
-                opacity:1;
-            `
-        })
+        if(window.innerWidth < 993) {
+            item.addEventListener('click', ()=> {
+                listMenu[i].classList.toggle('hide');
+            });
+        } 
+        if(window,innerWidth > 993) {
+            item.addEventListener('mouseenter', ()=> {
+                listMenu[i].classList.remove('hide');
+                listMenu[i].classList.add('show')
+            });
+        }
+        
+        
+        // else {
+        //     item.addEventListener('mouseenter', ()=> {
+        //         listMenu[i].classList.remove('hide');
+        //         listMenu[i].classList.add('show')
+        //     });
+        // }
+      
     });
 
-    listMenu.forEach((item, i)=> {
-        item.addEventListener('mouseleave', ()=> {
-            item.style.cssText = `
-              visibility: hidden;
-              opacity:0;
-            `; 
-        })
+    listMenu.forEach((item)=> {
+        if(window.innerWidth < 993) {
+            item.addEventListener('click', (e)=> {
+                if(e.target.classList.contains('nav')) {
+                    item.classList.add('hide') 
+                }
+                
+            })
+        }       
+        if(window.innerWidth > 993) {
+            item.addEventListener('mouseleave', ()=> {
+                item.classList.add('hide') 
+            })
+        }
+        // else {
+        //     item.addEventListener('mouseleave', ()=> {
+        //         item.classList.add('hide') 
+        //     })
+        // }
+       
     })
-    // listItem.addEventListener('mouseenter', (e)=> {
-    //     listMenu.style.cssText = `
-    //         visibility: visible;
-    //         opacity:1;
-    //     `
-    // });   
-    // listMenu.addEventListener('mouseleave', (e)=> {
-    //     if(e.target === listMenu) {
-    //         listMenu.style.cssText = `
-    //             visibility: hidden;
-    //             opacity:0;
-    //         `; 
-    //     }            
-    // });      
+     
 })

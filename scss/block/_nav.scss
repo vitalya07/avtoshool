@@ -2,7 +2,7 @@
     background-color: $darkColor;
     height: 68px;
     width: 100%;
-    padding: 22px 0;
+    padding: 22px 15px;
     &__list {
         display: flex;
         align-items: center;
@@ -14,7 +14,6 @@
             font-size: 20px;
             line-height: 122%;
             color: $whiteColor;            
-            // position: relative;
             cursor: pointer;
             text-transform: uppercase;
             transition: all .4s ease;
@@ -62,8 +61,8 @@
                 min-height: 236px;
                 padding: 22px;
                 background-color: $darkColor;     
-                visibility: hidden;
-                opacity: 0;   
+                // visibility: hidden;
+                // opacity: 0;   
                 &.two {
                     width: 435px;
                 }   
