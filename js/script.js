@@ -41,5 +41,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
     hanburger.addEventListener('click', (e)=> {
         header.classList.toggle('open');
         nav.classList.toggle('open');
-    })         
+    });
+    // смена чекбокса
+    function selectCheckbox(selectedCheckbox) {
+        const checkboxes = document.querySelectorAll('.calc__chekboxs-item--input');
+        checkboxes.forEach(checkbox => {
+            if (checkbox !== selectedCheckbox) {
+                checkbox.checked = false;
+            }
+        });
+    }
+    selectCheckbox()
 })
