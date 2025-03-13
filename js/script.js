@@ -1,5 +1,6 @@
 'use strict'
 document.addEventListener('DOMContentLoaded', ()=> {
+    //Выпадающее меню
     const listItem = document.querySelectorAll('.nav__list-item--menu'),
           listMenu = document.querySelectorAll('.nav__list-item--list');
 
@@ -14,16 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 listMenu[i].classList.remove('hide');
                 listMenu[i].classList.add('show')
             });
-        }
-        
-        
-        // else {
-        //     item.addEventListener('mouseenter', ()=> {
-        //         listMenu[i].classList.remove('hide');
-        //         listMenu[i].classList.add('show')
-        //     });
-        // }
-      
+        }       
     });
 
     listMenu.forEach((item)=> {
@@ -40,12 +32,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 item.classList.add('hide') 
             })
         }
-        // else {
-        //     item.addEventListener('mouseleave', ()=> {
-        //         item.classList.add('hide') 
-        //     })
-        // }
        
-    })
-     
+    });
+    // гамбургер и навигационное меню
+    const header = document.querySelector('.header'),
+          nav = document.querySelector('nav'),
+          hanburger = document.querySelector('.hamburger');
+    hanburger.addEventListener('click', (e)=> {
+        header.classList.toggle('open');
+        nav.classList.toggle('open');
+    })         
 })

@@ -1,0 +1,155 @@
+.calc {
+    padding: 35px 15px 50px 15px;
+    &__wrapper {
+        @include wrapper;
+        background-color: $whiteColor;
+        border-radius: 16px;
+        padding: 20px;
+    }
+    &__left {
+        width: 610px;
+        min-height: 531px;
+        background-color: $grayColor;
+        border-radius: 16px;
+        padding: 25px;
+        letter-spacing: -0.9px;
+        &-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 114%;
+            color: $darkColor;
+            margin-bottom: 22px;
+            span {
+                color: $whiteColor;
+                background-color: $redColor;
+                padding:0 4px 0 3px;
+                border-radius: 6px;
+            }
+        }
+        &-descr {
+            font-family: 'Onest', sans-serif;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 30px;
+            color: $darkColor;
+            margin-bottom: 22px;
+        }
+    }
+    &__advantages {
+        margin-bottom: 35px;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 6px;
+            margin-bottom: 12px;
+            &-img {
+                width: 20px;
+                height: 20px;
+            }
+            &-name {
+                font-family: 'Onest', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;                
+                color: $darkColor;
+            }
+        }
+    }
+    &__btn {
+        @include button;
+        width: 100%;
+        height: 81px;
+        background-color: $blueColor;
+        border-radius: 16px;
+        font-family: 'Onest', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+        margin-bottom: 16px;
+        &:hover {
+            background-color: $redColor;
+        }
+    }
+    &__info {
+        font-family: 'Onest', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $darkColor;
+    }
+    &__right {
+        max-width: 600px;
+        padding: 25px;
+        background-color: $grayColor;
+        border-radius: 16px;
+        &-top {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 24px;
+            margin-bottom: 45px;
+            &--img {
+                width: 66px;
+                height: 66px;
+            }
+            &--name {
+                max-width: 434px;
+                font-family: 'Onest', sans-serif;
+                font-weight: 600;
+                font-size: 43px;
+                line-height: 45px;
+                letter-spacing: -2px;
+                color: $darkColor;
+            }
+        }
+        &-query {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 100%;
+            color: $darkColor;
+            margin-bottom: 28px;
+        }
+    }
+    &__chekboxs {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+            margin-bottom: 10px;
+            &--input {
+                display: none;                
+                &:checked + .calc__chekboxs-item--label::before {
+                    background-color: $blueColor
+                }
+            }
+            &--name {
+                font-family: 'Onest', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $darkColor;    
+            }
+            &--label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid $blueColor;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+}
+// .calc__chekboxs-item--input:checked + .calc__chekboxs-item--label::before {
+//     background: blue; /* Синяя заливка при активном состоянии */
+// }

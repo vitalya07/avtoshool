@@ -81,4 +81,22 @@
             }
         }
     }
+    &.open {                         
+        .hamburger {
+            span {
+                &:first-child {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    top: 0;
+                    opacity: 0;
+                }
+                &:last-child {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }

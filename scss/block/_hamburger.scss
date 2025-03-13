@@ -4,6 +4,7 @@
     position: relative;
     cursor: pointer;
     display: none;
+    z-index: 7;
     span {
         display: block;
         width: 40px;
@@ -14,14 +15,18 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        transition: all .4s ease;
         &:first-child {
             top: 35%;
+            transition: all .4s ease;
         }
         &:nth-child(2) {
             top: 50%;
+            transition: all .1s ease;
         }
         &:last-child {
             top: 65%;
+            transition: all .4s ease;
         }
     }
 }

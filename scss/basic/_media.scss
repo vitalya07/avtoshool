@@ -27,11 +27,16 @@
         height: 100vh;
         width: 70%;
         position: absolute;
-        right: 0;
+        right: -100%;
         top: 0;
+        transition: all .4s ease;
         &__list {
+            position: absolute;
+            height: 100vh;
+            width: 70%;
             display: block;
-            padding: 70px;       
+            padding: 70px;  
+            // height: 100vh;     
             &-item {
                 margin-bottom: 20px;
                 &--menu {
@@ -80,6 +85,27 @@
             font-size: 12px;
             margin-right: 0;
             max-width: 170px;
+        }
+    }
+    .nav {
+        &__list {
+            &-link {
+                font-size: 14px;
+            }
+            &-item {
+                &--menu {
+                    font-size: 14px;
+                    &:before {
+                        top: 10%;
+                    }
+                    &::after {
+                        top: 10%;
+                    }
+                }
+                &--link {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
