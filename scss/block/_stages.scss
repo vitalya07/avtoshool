@@ -1,0 +1,49 @@
+.stages {
+    padding: 60px 15px;
+    width: 100%;  
+    &__bg {
+        width: 100%;
+        min-height: 835px;
+        position: relative;
+    }
+    &__title {
+        font-family: 'Onest', sans-serif;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 102%;
+        letter-spacing: -2px;
+        text-align: left;
+        color: $whiteColor;
+        position: absolute;
+        top: 42px;
+        left: 35px;
+    }
+    &__btn {
+        width: 508px;
+        height: 81px;
+        border-radius: 16px;
+        padding: 24px 18px;
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $redColor;
+        font-family: 'Onest', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+        color: $whiteColor;
+        border: none;
+        cursor: pointer;
+        transition: all .4s ease;
+        position: absolute;
+        bottom: 76px;
+        right: 76px;
+        &:hover {
+            background-color: $blueColor;
+        }
+        &:focus {
+            outline: 1px solid $redColor;
+        }
+    }
+}

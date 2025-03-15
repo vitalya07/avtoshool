@@ -39,6 +39,22 @@
             }
         }
     }
+    .format {
+        &__item {
+            width: 265px;
+            min-height: 265px;
+            &-img {
+                width: 65px;
+                height: 65px;
+            }
+            &-title {
+                font-size: 19px;
+            }
+            &-descr {
+                font-size: 15px;
+            }
+        }
+    }
     .conus {
         &__img {
             width: 100px;
@@ -52,6 +68,25 @@
             height: 50px;
         }
         &__wrapper {
+            height: 60px;
+        }
+    }
+    .carpark {
+        &__item {
+            width: 220px;
+            &-title {
+                font-size: 20px;
+            }
+            &-descr {
+                font-size: 14px;
+            }
+        }
+    }
+    .stages {
+        &__btn {
+            bottom: 200px;
+            right: 70px;
+            width: 420px;
             height: 60px;
         }
     }
@@ -139,6 +174,23 @@
             }
         }
     }
+    .format {
+        &__item {
+            padding: 22px 22px 32px 22px;
+            width: 245px;
+            min-height: 245px;
+            &-img {
+                width: 45px;
+                height: 45px;
+            }
+            &-title {
+                font-size: 16px;
+            }
+            &-descr {
+                font-size: 12px;
+            }
+        }
+    }
     .conus {
         &__img {
             width: 100px;
@@ -158,6 +210,45 @@
             padding: 15px 0 15px 0;
         }
     }
+    .carpark {
+        &__title {
+            font-size: 35px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+        &__img {
+            min-height: 250px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        &__item {
+            width: 282px;
+            &-title {
+                font-size: 26px;
+            }
+            &-descr {
+                font-size: 20px;
+            }
+        }
+    }
+    .stages {
+        &__bg {
+            min-height: 555px;
+        }
+        &__title {
+            max-width: 345px;
+        }
+        &__btn {
+            bottom: 50px;
+            right: 35px;
+            width: 330px;
+            height: 40px;
+        }
+    }
 }
 
 @media (max-width: 769px) {
@@ -173,6 +264,63 @@
     .advantages {
         &__wrapper {
             flex-wrap: wrap;
+        }
+    }
+    .format{
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+    .carpark {
+        &__title {
+            font-size: 35px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+        &__img {
+            min-height: 185px;
+        }
+        &__wrapper {
+            gap: 12px;
+        }
+        &__item {
+            width: 174px;
+            height: 152px;
+            padding: 16px;
+            &-title {
+                font-size: 16px;
+            }
+            &-descr {
+                font-size: 14px;
+            }
+        }
+        &__link {
+            width: 180px;
+            height: 34px;
+            &-img {
+                width: 25px;
+                height: 25px;
+            }
+            &-name {
+                font-size: 12px;
+            }
+        }
+    }
+    .stages {
+        &__bg {
+            min-height: 427px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__btn {
+            bottom: 65px;
+            right: 35px;
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            padding: 0;
         }
     }
 }
@@ -266,7 +414,60 @@
                 max-width: 100%;
             }
         }
-    }    
+    }   
+    .format {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            padding: 22px 22px 32px 22px;
+            width: 100%;
+            min-height: 136px; 
+            flex-direction: row; 
+            gap: 10px;            
+            &-img {
+                width: 68px;
+                height: 50px;
+            }
+            &-title {
+                font-size: 20px;
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            &-descr {
+                font-size: 16px;
+                max-width: 100%;
+            }
+        }
+    } 
+    .stages {
+        &__bg {
+            min-height: 306px;
+        }
+        &__title {
+            font-size: 20px;
+            color: $darkColor;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__btn {
+            width: 300px;
+            height: 40px;
+            padding: 16px 18px;
+            border-radius: 16px;
+            font-size: 20px;
+            bottom: 5px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    } 
+    .carpark {
+        &__img {
+            min-height: 134px;
+        }
+    }
 }
 @media (max-width: 450px) {
     .header {
@@ -302,11 +503,63 @@
             }
         }
     }
+    .carpark {
+        &__img {
+            min-height: 100px;
+        }
+    }
+    .stages {
+        &__bg {
+            min-height: 261px;
+        }
+        &__title {
+            font-size: 14px;
+            color: $darkColor;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__btn {
+            width: 200px;
+            height: 30px;
+            padding: 0;
+            border-radius: 16px;
+            font-size: 14px;
+            bottom: 35px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    } 
+    .format {
+        &__item {
+            &-img {
+                width: 70px;
+                height: 40px;
+            }
+        }
+    }
 }
 @media (max-width: 380px) {
     .header {
         &__time, &__phone {
             display: none;
+        }
+    }
+    .carpark {
+        &__img {
+            min-height: 50px;
+        }
+    }
+    .stages {
+        padding: 0;
+    }
+    .format {
+        &__item {
+            &-img {
+                width: 90px;
+                height: 40px;
+            }
         }
     }
 }

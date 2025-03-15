@@ -1,0 +1,83 @@
+.carpark {
+    padding: 62px 15px;
+    &__box {
+        padding: 42px 20px 20px 20px;
+        background-color: $whiteColor;
+        border-radius: 17px;
+    }
+    &__title {
+        font-family: 'Onest', sans-serif;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 102%;
+        letter-spacing: -2%;
+        color: $darkColor;
+        margin-bottom: 15px;
+    }
+    &__descr {
+        @include subttitle;
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    &__img {
+        width: 100%;
+        min-height: 303px;
+        border-radius: 17px;
+        margin-bottom: 15px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__item {
+        width: 282px;
+        height: 244px;
+        background-color: $grayColor;
+        padding: 32px 16px;
+        border-radius: 16px;
+        &-title {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 100%;
+            color: $darkColor;
+            margin-bottom: 22px;
+        }
+        &-descr {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 122%;
+            color: $darkColor;
+        }
+    }
+    &__link {
+        width: 220px;
+        height: 62px;
+        border-radius: 128px;
+        padding: 14px 18px;
+        background-color: $blueColor;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transition: all .4s ease;
+        &-img {
+            width: 34px;
+            height: 34px;
+        }
+        &-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: $whiteColor;
+        }
+        &:hover {
+            background-color: $redColor;
+        }
+    }
+}
