@@ -1,0 +1,36 @@
+.advantages {
+    padding: 0 15px 60px 15px;
+    &__wrapper {
+        @include wrapper;
+    }
+    &__item {
+        background-color: $whiteColor;
+        padding: 32px 32px 43px 32px;
+        width: 334px;
+        min-height: 292px;
+        border-radius: 16px;
+        border: 1px solid $blueColor;
+        display: flex;
+        flex-direction: column;
+        &-img {
+            width: 85px;
+            height: 85px;
+            margin-bottom: 25px;
+        }
+        &-title {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 100%;
+            color: $darkColor;
+            margin-bottom: 25px;
+        }
+        &-descr {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 122%;
+            color: $darkColor;
+        }
+    }
+}

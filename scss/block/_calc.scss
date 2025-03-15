@@ -112,8 +112,45 @@
             color: $darkColor;
             margin-bottom: 28px;
         }
+        &-progress {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 16px;
+        }
+        &-arrow {
+            width: 45px;
+            height: 45px;
+            cursor: pointer;            
+            &--next {
+                transform: rotate(180deg);
+            }
+        }
+        &-line {
+            width: 391px;
+            height: 20px;
+            background-color: $colorLineBackground;
+            border-radius: 20px;
+            position: relative;
+            &--bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 25%;
+                height: 100%;
+                border-radius: 20px;
+                background-color: $blueColor;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: $whiteColor;
+            }
+        }
     }
     &__chekboxs {
+        margin-bottom: 70px;
         &-item {
             display: flex;
             align-items: center;

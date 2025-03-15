@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="body__container">
-        <header class="header open">
+        <header class="header">
             <div class="container">
                 <div class="header__wrapper">
                     <a href="index.html" class="header__logo">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </header>
-        <nav class="nav open">
+        <nav class="nav">
             <div class="container">
                 <ul class="nav__list">
                     <li class="nav__list-item"><a href="#" class="nav__list-link">ГЛАВНАЯ</a><span class="nav__close"></span></li>
@@ -133,23 +133,23 @@
                                     <div class="calc__advantages-item-img">
                                         <img src="icons/advantages.svg" alt="checck">
                                     </div>
-                                    <p class="calc__advantages-item-name">Собственная обучающая онлайн платформа</p>
+                                    <p class="calc__advantages-item--name">Собственная обучающая онлайн платформа</p>
                                 </li>
                                 <li class="calc__advantages-item">
                                     <div class="calc__advantages-item-img">
                                         <img src="icons/advantages.svg" alt="checck">
                                     </div>
-                                    <p class="calc__advantages-item-name">Опытные инструкторы на надежных авто</p>
+                                    <p class="calc__advantages-item--name">Опытные инструкторы на надежных авто</p>
                                 </li>
                                 <li class="calc__advantages-item">
                                     <div class="calc__advantages-item-img">
                                         <img src="icons/advantages.svg" alt="checck">
                                     </div>
-                                    <p class="calc__advantages-item-name">Безлимит на сдачу внутренних экзаменов</p>
+                                    <p class="calc__advantages-item--name">Безлимит на сдачу внутренних экзаменов</p>
                                 </li>
                             </ul>
                             <button class="calc__btn btn">УЗНАТЬ СТОИМОСТЬ</button>
-                            <p class="calc__info">В цену включены: теория, 56 часов вождения, внутренние экзамены в автошколе, бензин.</p>
+                            <p class="calc__info">В цену включены: теория, 56 часов вождения, внутренние экзамены в автошколе, бензин.</p>
                         </div>
                         <div class="calc__right">
                             <div class="calc__right-top">
@@ -159,35 +159,103 @@
                                 <h2 class="calc__right-top--name">Быстрый расчёт стоимости обучения</h2>
                             </div>
                             <h3 class="calc__right-query">Есть ли у вас опыт вождения автомобиля?</h3>
-                            <div class="calc__checkboxs">
+                            <div class="calc__chekboxs">
                                 <div class="calc__chekboxs-item">
                                     <input type="checkbox" name="checkbox" id="checkbox" class="calc__chekboxs-item--input">
                                     <label for="checkbox" class="calc__chekboxs-item--label">
-                                        <p class="calc__checkbox-item-name">Да, обучался самостоятельно с друзьями/родственниками</p>
+                                        <p class="calc__chekboxs-item--name">Да, обучался самостоятельно с друзьями/родственниками</p>
                                     </label>
                                 </div>
                                 <div class="calc__chekboxs-item">
                                     <input type="checkbox" name="checkbox" id="checkbox" class="calc__chekboxs-item--input">
                                     <label for="checkbox" class="calc__chekboxs-item--label">
-                                        <p class="calc__checkbox-item-name">Да, обучался в другой автошколе</p>
+                                        <p class="calc__chekboxs-item--name">Да, обучался в другой автошколе</p>
                                     </label>
                                 </div>
                                 <div class="calc__chekboxs-item">
                                     <input type="checkbox" name="checkbox" id="checkbox" class="calc__chekboxs-item--input">
                                     <label for="checkbox" class="calc__chekboxs-item--label">
-                                        <p class="calc__checkbox-item-name">Нет, буду садиться за руль впервые</p>
+                                        <p class="calc__chekboxs-item--name">Нет, буду садиться за руль впервые</p>
                                     </label>
                                 </div>
                                 <div class="calc__chekboxs-item">
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="calc__chekboxs-item--input">
+                                    <input type="checkbox" name="chekbox" id="checkbox" class="calc__chekboxs-item--input">
                                     <label for="checkbox" class="calc__chekboxs-item--label">
-                                        <p class="calc__checkbox-item-name">Есть права, хочу обновить знания</p>
+                                        <p class="calc__chekboxs-item--name">Есть права, хочу обновить знания</p>
                                     </label>
                                 </div>
                             </div>
                             <div class="calc__right-progress">
-                                
+                                <div class="calc__right-arrow calc__right-arrow--prev" id="prev">
+                                    <img src="icons/Arrow.svg" alt="arrow-left">
+                                </div>
+                                <div class="calc__right-arrow calc__right-arrow--next" id="next">
+                                    <img src="icons/Arrow.svg" alt="arrow-left">
+                                </div>
+                                <div class="calc__right-line">
+                                    <span class="calc__right-line--bg">25%</span>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="advantages">
+                <div class="container">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="icons/like.svg" alt="like">
+                            </div>
+                            <div>
+                                <h3 class="advantages__item-title">5,0</h3>
+                            <p class="advantages__item-descr">Рейтинг нашей автошколы на Яндекс.Картах</p>
+                            </div>
+                            
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="icons/formats-tutor.svg" alt="formats-tutor">
+                            </div>
+                            <div>
+                                <h3 class="advantages__item-title">3 формата обучения</h3>
+                                <p class="advantages__item-descr">Онлайн, Zoom, в классе. Учись когда удобно!</p>
+                            </div>                            
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="icons/price.svg" alt="price">
+                            </div>
+                            <div>
+                                <h3 class="advantages__item-title">Честная цена</h3>
+                                <p class="advantages__item-descr">Без скрытых платежей и дополнительных расходов</p>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="conus">
+                <div class="container">
+                    <div class="conus__wrapper">
+                        <div class="conus__img">
+                            <img src="img/conus.png" alt="conus">
+                        </div>
+                        <h2 class="conus__text">Автошкола, где заботятся, чтобы вы сдали экзамен</h2>
+                        <button class="conus__btn btn">Оставить заявку</button>
+                    </div>
+                </div>
+            </article>
+            <article class="carpark">
+                <div class="container">
+                    <h2 class="carpark__title">Готовим не только к успешной сдаче экзамена, но и к реальным ситуациям на дороге</h2>
+                    <h3 class="carpark__descr">Наши инструктора учат, чтобы после получения прав, ваше вождение было уверенным и безопасным </h3>
+                    <div class="carpark__img">
+                        <img src="img/carpark.png" alt="carpark">
+                    </div>
+                    <div class="carpark__wrapper">
+                        <div class="carpark__item">
+                            <h3 class="carpark__item-title">Машины моются каждые два дня</h3>
+                            <p class="carpark__item-descr">чтобы вам было приятно управлять автомобилем</p>
                         </div>
                     </div>
                 </div>
