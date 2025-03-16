@@ -18,39 +18,3 @@
     // opacity: 0;
     display: none;
 }
-.splide__arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 1;
-    &--prev {
-        left: 85%;
-        top: -30px;
-        width: 47px;
-        height: 47px;
-        background-color: $blueColor;
-        fill: $whiteColor;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            width:6px;
-            height: 13px;
-        }
-    }
-    &--next {
-        right: 20px;
-        top: -30px;
-        width: 47px;
-        height: 47px;
-        transform: translate(50%, -50%) rotate(180deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $blueColor;
-        img {
-            width:6px;
-            height: 13px;
-        }
-    }
-}
