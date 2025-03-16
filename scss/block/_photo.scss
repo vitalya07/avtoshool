@@ -1,12 +1,14 @@
 .photo {
+    padding: 42px 15px;
+    &__container {
+        background-color: $whiteColor;
+        border-radius: 20px;
+        padding-top: 42px;
+    }
     &__arrow {
         position: absolute;
-        // top: 0;
-        // right: 0;
         opacity: 1;
         &--prev {
-            // left: 85%;
-            // top: -30px;
             width: 47px;
             height: 47px;
             background-color: $blueColor;
@@ -20,8 +22,6 @@
             }
         }
         &--next {
-            // right: 20px;
-            // top: -30px;
             width: 47px;
             height: 47px;
             transform: translate(50%, -50%) rotate(180deg);
@@ -35,4 +35,47 @@
             }
         }
     }
+    &__title {
+        font-family: 'Onest', sans-serif;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 102%;
+        letter-spacing: -2px;
+        color: $darkColor;
+        margin-bottom: 20px;
+        margin-left: 93px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 12px;
+        margin-bottom: 32px;
+        margin-left: 93px;
+        &-item {
+            width: 163px;
+            height: 47px;
+            border: 1px solid $darkColor;
+            border-radius: 128px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:first-child {
+                border: 1px solid $redColor;
+                color: $redColor;
+            }
+            &:nth-child(2) {
+                width: 95px;
+            }
+            &:last-child {
+                width: 229px;
+            }
+        }
+    }
+    &__splide {
+        margin-bottom: 70px;
+    }
 }
+// .photo__splide {
+//     margin-bottom: 40px;
+// }
