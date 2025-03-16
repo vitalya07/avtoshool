@@ -3,12 +3,8 @@
     &__container {
         background-color: $whiteColor;
         padding: 42px 150px;
-    }
-    // &__item {
-    //     max-width: 533px;
-    //     min-height: 536px;
-    //     border-radius: 20px;
-    // }   
+        max-width: 1440px;
+    }  
     &__title {
         font-family: 'Onest', sans-serif;
         font-weight: 600;
