@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Автошкола за рулем с нами значит с правами, лучшая автошкола ">
-    <title>Автошкола За рулем</title>
-    <script src="js/script.js" defer></script>
+    <title>Автошкола За рулем</title>    
+    <link rel="stylesheet" href="css/splide.min.css">   
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -326,7 +326,85 @@
                     </div>
                 </div>
             </article>
+            <article class="branches">
+                <div class="container branches__container">
+                    <h2 class="branches__title">16 филиалов</h2>
+                    <h3 class="branches__subtitle">Удобное расположение, современное оборудование, комфортная обстановка</h3>
+                    <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="icons/Arrow-slider.svg" alt="slider">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="icons/Arrow-slider.svg" alt="slider">
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="branches__item">
+                                        <div class="branches__img">
+                                            <img src="img/photo1.png" alt="photo">
+                                        </div>
+                                        <p class="branches__descr">г. Москва. Таганская 3</p>
+                                    </div>
+                                </li>    
+                                <li class="splide__slide">
+                                    <div class="branches__item">
+                                        <div class="branches__img">
+                                            <img src="img/photo1.png" alt="photo">
+                                        </div>
+                                        <p class="branches__descr">г. Москва. Таганская 3</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="branches__item">
+                                        <div class="branches__img">
+                                            <img src="img/photo1.png" alt="photo">
+                                        </div>
+                                        <p class="branches__descr">г. Москва. Таганская 3</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+            </article>
+            <article class="request">
+                <div class="container">
+                    <div class="request__wrapper">
+                        <div class="request__left">
+                            <div class="request__left-top">
+                                <div class="request__left-top--img">
+                                    <img src="icons/request.svg" alt="request">
+                                </div>
+                                <h2 class="request__left-top--title">Заявка на обучение</h2>
+                            </div>
+                            <h3 class="request__left-subtitle">Менеджер перезвонит в течение часа и запишет вас на удобное время</h3>
+                        </div>
+                        <div class="request__right">
+                            <form action="#" class="request__right-form" id="form">
+                                <label class="request__right-form--label">
+                                    <input type="name" name="name" id="name" class="request__right-form--input" placeholder="Имя">
+                                </label>
+                                <label class="request__right-form--label">
+                                    <input type="phone" name="phone" id="phone" class="request__right-form--input" placeholder="Телефон">
+                                </label>
+                                <button class="request__right-btn btn">Записаться на консультацию</button>
+                                <p class="request__right-policy">Нажимая на кнопку, я соглашаюсь с <a href="policy.html">политикой обработки данных</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="app">
+                <div class="container">
+                    
+                </div>
+            </article>
         </main>
     </div>
+    <script src="js/splide.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

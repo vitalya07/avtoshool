@@ -42,4 +42,30 @@ document.addEventListener('DOMContentLoaded', ()=> {
         header.classList.toggle('open');
         nav.classList.toggle('open');
     });
+    //slide 
+    new Splide('#slider1', {
+        rewind : true,
+        perPage: 2,
+        gap    : '2rem',
+        pagination: false,
+        gap: '19px',
+        breakpoints: {
+            993: { 
+                perPage: 2, 
+                padding: '2rem',                
+            },
+            768: { 
+                perPage: 1,
+                padding: '5rem',  
+                arrows: false,    
+            },
+            556: { 
+                padding: '3rem',      
+            },
+            450: { 
+                padding: '1.7rem',      
+            },
+        },
+    }).mount();
+    //Отправкка формы
 })
