@@ -115,5 +115,114 @@ document.addEventListener('DOMContentLoaded', ()=> {
             },
         },
     }).mount();
-    //Отправкка формы
+    new Splide('#slider4', {
+        rewind : true,
+        perPage: 2,
+        padding: '5rem', 
+        pagination: false,
+        breakpoints: {
+            993: { 
+                perPage: 2, 
+                padding: '2rem',                
+            },
+            768: { 
+                perPage: 1,
+                padding: '5rem',  
+                arrows: false,    
+            },
+            556: { 
+                padding: '3rem',      
+            },
+            450: { 
+                padding: '1.7rem',      
+            },
+        },
+    }).mount();
+    new Splide('#slider5', {
+        rewind : true,
+        perPage: 1,
+        // padding: '5rem', 
+        pagination: false,
+        breakpoints: {
+            993: { 
+                perPage: 2, 
+                padding: '2rem',                
+            },
+            768: { 
+                perPage: 1,
+                padding: '5rem',  
+                arrows: false,    
+            },
+            556: { 
+                padding: '3rem',      
+            },
+            450: { 
+                padding: '1.7rem',      
+            },
+        },
+    }).mount();
+    new Splide('#slider6', {
+        rewind : true,
+        perPage: 2,
+        padding: '5rem', 
+        pagination: false,
+        breakpoints: {
+            993: { 
+                perPage: 2, 
+                padding: '2rem',                
+            },
+            768: { 
+                perPage: 1,
+                padding: '5rem',  
+                arrows: false,    
+            },
+            556: { 
+                padding: '3rem',      
+            },
+            450: { 
+                padding: '1.7rem',      
+            },
+        },
+    }).mount();
+    //табы
+    const slides = document.querySelectorAll('.price__item');
+    slides.forEach(slide => {
+        const parentTabs = slide.querySelector('.price__item-tabs');
+        const tab = slide.querySelectorAll('.price__item-tabs--tab');
+        const  content = slide.querySelectorAll('.price__item-contents--content');
+
+        parentTabs.addEventListener('click', (e)=> {
+            const target = e.target;
+            if (target.classList.contains('price__item-tabs--tab')) {
+                tab.forEach((item, i)=> {
+                    if(target == item) {
+                        removeActiveClass(tab, content)
+                        addActiveClass(i, tab, content)
+                    }
+                })
+            } 
+        });  
+        function removeActiveClass() {
+            tab.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            content.forEach(item => {
+                item.style.display = 'none';
+            });
+        };     
+        function addActiveClass(i = 0) {
+            tab[i].classList.add('active');
+            content[i].style.display = 'block';
+        };   
+        removeActiveClass();
+        addActiveClass();
+    }); 
+    //tabs
+    const perksItem = document.querySelectorAll('.perks__information-item');
+
+    perksItem.forEach((item)=> {
+        item.addEventListener('click', ()=> {
+            item.classList.toggle('open')
+        })
+    });      
 })

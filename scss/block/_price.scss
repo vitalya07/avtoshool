@@ -1,0 +1,218 @@
+.price {
+    padding: 60px 15px;
+    &__top {
+        display: flex;
+        align-self: center;
+        justify-content: start;
+        gap: 10px;
+        margin-bottom: 30px;
+        &-img {
+            width: 60px;
+            height: 60px;
+        }
+        &-title {
+            font-family: 'Onest', sans-serif;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 102%;
+            letter-spacing: -2px;
+            color: $darkColor;
+        }
+    }
+    &__subtitle {
+        font-family: 'Onest', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 100%;
+        color: $darkColor;
+        margin-bottom: 30px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 12px;
+        margin-bottom: 30px;
+        &-item {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            color: $darkColor;
+            border: 1px solid $darkColor;
+            border-radius: 128px;
+            padding: 14px 18px;
+            &:first-child {
+                border: 1px solid $redColor;
+                color: $redColor;
+            }
+        }
+    }
+    &__item {
+        padding: 32px 40px;
+        background-color: $whiteColor;
+        border-radius: 8px;
+        width: 490px;
+        &-title {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 100%;
+            color: $darkColor;
+            margin-bottom: 25px;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            &--name {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 122%;
+                color: $darkColor;
+                margin-bottom: 20px;
+            }
+            &--img {
+                width: 120px;
+                height: 118px;
+            }
+        }
+        &-tabs {
+            display: flex;
+            margin-bottom: 26px;
+            gap: 5px;
+            &--tab {
+                border-bottom: 1px solid #BED8D9;
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 122%;
+                color: $darkColor;
+                cursor: pointer;
+                &.active {
+                    font-weight: 500;
+                    border-bottom: 1px solid $blueColor;
+                }
+            }
+        }
+        &-contents {
+            background-color: $grayColor;
+            padding: 20px;
+            border-radius: 8px;
+            &--profit {
+                background-color: $redColor;
+                border-radius: 64px;
+                padding: 10px 20px;
+                width: 196px;
+                height: 44px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 122%;
+                color: $whiteColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 180px;
+                margin-bottom: 42px;
+            }
+            &--oldprice {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 122%;
+                text-decoration: line-through;
+                color: $darkColor;
+                margin-bottom: 23px;
+            }
+            &--newprice {
+                font-family: 'Onest', sans-serif;
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 102%;
+                letter-spacing: -2px;
+                color: $darkColor;
+            }
+            &--title {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 122%;
+                color: $darkColor;
+                margin-bottom: 20px;
+            }
+            &--wrapper {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                gap: 16px;
+            }
+            &--item {
+                padding: 8px 16px;
+                background-color: $whiteColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                border-radius: 64px;
+                margin-bottom: 4px;
+            }
+            &--number {
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $blueColor2;
+                width: 25px;
+                height: 25px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 122%;
+                color: $whiteColor;
+            }
+            &--text {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 122%;
+                color: $darkColor;
+            }
+        }
+    }
+    &__arrow {
+        position: absolute;
+        bottom: -50px;
+        opacity: 1;
+        &--prev {
+            width: 47px;
+            height: 47px;
+            background-color: $blueColor;
+            fill: $whiteColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width:6px;
+                height: 13px;
+            }
+        }
+        &--next {
+            width: 47px;
+            height: 47px;
+            transform: translate(50%, -50%) rotate(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $blueColor;
+            left: 80px;
+            img {
+                width:6px;
+                height: 13px;
+            }
+        }
+    }
+
+}

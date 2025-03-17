@@ -1,0 +1,90 @@
+.perks {
+    padding: 60px 15px;
+    &__top {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 18px;
+        &-img {
+            width: 80px;
+            height: 80px;
+        }
+        &-title {
+            font-family: 'Onest', sans-serif;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 102%;
+            letter-spacing: -2px;
+            color: $darkColor;
+            margin-bottom: 60px;
+        }               
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__information {
+        width: 616px;
+        background-color: $whiteColor;           
+        border: 1px solid $blueColor;
+        border-radius: 16px;
+        &-item {
+            padding: 36px 24px 0 24px;   
+            border-bottom: 1px solid $blueColor;
+            &:last-child {
+                border-bottom: none;
+            }
+            &--top {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 8px;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            &--img {
+                border-radius: 100%;
+                width: 45px;
+                height: 45px;
+                background-color: $blueColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(-90deg);
+                img {
+                    width: 6px;
+                    height: 13px;
+                }
+            }
+            &--name {
+                font-family: 'Onest', sans-serif;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 100%;
+                color: $darkColor;               
+            }
+            &--info {
+                padding: 20px;
+                background-color: $grayColor;
+                border-radius: 16px;
+                margin-bottom: 20px;
+                display: none;
+            }
+            &.open {
+                .perks__information-item--info {
+                    display: block;
+                }
+                .perks__information-item--img {
+                    transform: rotate(90deg);
+                    transition: all .4s ease;
+                }
+            }
+        }
+    }
+    &__img {
+        max-width: 616px;
+        min-height: 505px;
+        border-radius: 30px;
+    }
+}
