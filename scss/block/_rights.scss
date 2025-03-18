@@ -1,9 +1,15 @@
 .rights {
+    padding: 60px 15px;
+    &__container {
+        background-color: $whiteColor;
+        padding: 40px 20px 20px 20px;
+    }
     &__top {
         display: flex;
         align-items: center;
         justify-content: start;
         gap: 18px;
+        margin-bottom: 60px;
         &-img {
             width: 80px;
             height: 80px;
