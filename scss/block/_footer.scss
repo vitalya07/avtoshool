@@ -132,5 +132,103 @@
             }
         }
     }
-   
+    &__wrappers {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        max-width: 145px;
+        height: 65px;
+    }
+    &__name {
+        max-width: 250px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: $whiteColor;
+    }
+    &__time, &__phone {
+        max-width: 255px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 5px;
+        &-icons {
+            width: 40px;
+            height: 40px;
+        }
+        &-name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 100%;
+            color: $whiteColor;   
+            margin-bottom: 10px;         
+        }
+        &-subname {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: $whiteColor; 
+        }
+    }
+    &__feedback {
+        &-social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            &--icon {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                margin-bottom: 8px;
+            }
+            &--name {
+                font-family: 'Inter', sans-serif;
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 100%;
+                color: $whiteColor;
+            }
+        }
+        &-btn {
+            width: 226px;
+            height: 47px;
+            border-radius: 128px;
+            gap: 8px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include button;
+            background-color: $blueColor;
+            transition: all .4s ease;
+            &:hover {
+                background-color: $redColor;
+            }
+        }
+    }
+    &.open {                         
+        .hamburger {
+            span {
+                &:first-child {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    top: 0;
+                    opacity: 0;
+                }
+                &:last-child {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }
