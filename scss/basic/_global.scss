@@ -13,3 +13,17 @@
 .hide {
     display: none;
 }
+.open {
+    visibility: visible;
+    opacity: 1;
+    .modal__dialog {
+        transform: scale(1);
+    }
+}
+.exit {
+    visibility: hidden;
+    opacity: 0;
+    .modal__dialog {
+        transform: scale(0);
+    }
+}

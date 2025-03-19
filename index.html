@@ -10,7 +10,25 @@
 </head>
 <body>
     <div class="body__container">
-        <div class="modal"></div>
+        <div class="modal exit">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__content-top">
+                        <h2 class="modal__content-title">Оставьте заявку наш менеджер свяжектся с вами в ближайшее время</h2>
+                        <div class="modal__content-close"></div>
+                    </div>                    
+                    <form action="#" class="modal__form">
+                        <label class="modal__form-label">
+                            <input type="name" id="name" name="name" class="modal__form-input" placeholder="Ваше имя">
+                        </label>
+                        <label class="modal__form-label">
+                            <input type="phone" id="modal-phone" name="phone" class="modal__form-input" placeholder="Ваш Телефон">
+                        </label>
+                        <button class="modal__form-btn btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -69,7 +87,7 @@
                             <div class="header__feedback-btn--icon">
                                 <img src="icons/phone2.svg" alt="phone2">
                             </div>
-                            <div class="header__feedback-btn-text">Обратный звонок</div>
+                            <div data-modal class="header__feedback-btn-text">Обратный звонок</div>
                         </button>
                     </div>
                     <div class="hamburger">
@@ -149,7 +167,7 @@
                                     <p class="calc__advantages-item--name">Безлимит на сдачу внутренних экзаменов</p>
                                 </li>
                             </ul>
-                            <button class="calc__btn btn">УЗНАТЬ СТОИМОСТЬ</button>
+                            <button data-modal class="calc__btn btn">УЗНАТЬ СТОИМОСТЬ</button>
                             <p class="calc__info">В цену включены: теория, 56 часов вождения, внутренние экзамены в автошколе, бензин.</p>
                         </div>
                         <div class="calc__right">
@@ -242,7 +260,7 @@
                             <img src="img/conus.png" alt="conus">
                         </div>
                         <h2 class="conus__text">Автошкола, где заботятся, чтобы вы сдали экзамен</h2>
-                        <button class="conus__btn btn">Оставить заявку</button>
+                        <button data-modal class="conus__btn btn">Оставить заявку</button>
                     </div>
                 </div>
             </article>
@@ -288,9 +306,8 @@
                         </picture>
                         
                         <h2 class="stages__title">Этапы обучения в школе</h2>
-                        <button class="stages__btn btn">НАЧАТЬ ОБУЧЕНИЕ</button>
-                    </div>
-                    
+                        <button data-modal class="stages__btn btn">НАЧАТЬ ОБУЧЕНИЕ</button>
+                    </div>                    
                 </div>
             </article>
             <article class="format">
@@ -472,7 +489,7 @@
                     </div>
                 </div>
             </article>
-            <article class="photo">
+            <!-- <article class="photo">
                 <div class="container photo__container">
                     <h2 class="photo__title">Наша школа в фотографиях</h2>
                     <div class="photo__items">
@@ -534,8 +551,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="price">
+            </article> -->
+            <!-- <article class="price">
                 <div class="container container__price">
                     <div class="price__top">
                         <div class="price__top-img"><img src="icons/ruble.svg" alt="ruble"></div>
@@ -726,8 +743,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="students">
+            </article> -->
+            <!-- <article class="students">
                 <div class="container students__container">
                     <div class="students__top">
                         <div class="students__top-img">
@@ -974,8 +991,8 @@
                           </div>
                     </div>
                 </div>
-            </article>
-            <article class="perks">
+            </article> -->
+            <!-- <article class="perks">
                 <div class="container perks__container">
                     <div class="perks__top">
                         <div class="perks__top-img">
@@ -1038,8 +1055,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="rights">
+            </article> -->
+            <!-- <article class="rights">
                 <div class="container rights__container">
                     <div class="rights__top">
                         <div class="rights__top-img">
@@ -1075,8 +1092,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="perks">
+            </article> -->
+            <!-- <article class="perks">
                 <div class="container perks__container">
                     <div class="perks__top">
                         <div class="perks__top-img">
@@ -1139,19 +1156,19 @@
                         </div>                       
                     </div>
                 </div>
-            </article>
-            <article class="conus">
+            </article> -->
+            <!-- <article class="conus">
                 <div class="container">
                     <div class="conus__wrapper">
                         <div class="conus__img">
                             <img src="img/conus.png" alt="conus">
                         </div>
                         <h2 class="conus__text">Счастливые часы | Скидка 5000 ₽</h2>
-                        <button class="conus__btn btn">Оставить заявку</button>
+                        <button data-modal class="conus__btn btn">Оставить заявку</button>
                     </div>
                 </div>
-            </article>
-            <article class="perks FAQ">
+            </article> -->
+            <!-- <article class="perks FAQ">
                 <div class="container perks__container">
                     <div class="perks__top">
                         <h2 class="perks__top-title FAQ__title">Часто задаваемые вопросы</h2>
@@ -1222,8 +1239,8 @@
                         </div>                   
                     </div>
                 </div>
-            </article>
-            <article class="questions">
+            </article> -->
+            <!-- <article class="questions">
                 <div class="container questions__container">
                     <h2 class="questions__title">У вас остались вопросы?</h2>
                     <h2 class="questions__subtitle">Звоните с 10:00 до 19:30 с понедельника по пятницу</h2>
@@ -1236,9 +1253,9 @@
                         </div>
                     </a>
                 </div>
-            </article>
+            </article> -->
         </main>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="footer__left">
@@ -1374,7 +1391,7 @@
                                 </div>
                             </a>
                         </div>
-                        <button class="btn footer__feedback-btn">
+                        <button data-modal class="btn footer__feedback-btn">
                             <div class="footer__feedback-btn-icon">
                                 <img src="icons/phone2.svg" alt="phone2">
                             </div>
@@ -1388,8 +1405,9 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
 </body>

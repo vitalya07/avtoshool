@@ -1,0 +1,106 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);   
+    transition: all .4s ease;
+    &__dialog {
+        max-width: 600px;
+        margin: 50px auto;      
+        transform: scale(0);
+        transition: all .5s ease;
+    }   
+    &__content {
+        width: 100%;
+        min-height: 300px;
+        background-color: $whiteColor;
+        border-radius: 20px;
+        border: 1px solid $blueColor;
+        padding: 20px 15px;
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title {
+            @include title;
+            max-width: 400px;
+            line-height: 100%;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &-close {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 25px;
+                height: 2px;
+                background-color: $darkColor;
+                transform: rotate(45deg);
+                transition: all .4s ease;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 25px;
+                height: 2px;
+                background-color: $darkColor;
+                transform: rotate(-45deg);
+                transition: all .4s ease;
+            }
+            &:hover {
+                &::after {
+                    background-color: $blueColor;
+                }
+                &::before {
+                    background-color: $blueColor;
+                }
+            }
+        }
+    } 
+    &__form {
+        &-label {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        &-input {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            height: 60px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            border: 1px solid $blueColor;
+            &:focus {
+                outline: 1px solid $blueColor;
+            }
+        }
+        &-btn {
+            @include button;
+           width: 100%;
+           height: 50px;
+           background-color: $blueColor;
+           border-radius: 10px;
+            &:hover {
+                background-color: $redColor;
+            }
+        }
+    }
+    // &.open {
+    //     visibility: visible;
+    //     opacity: 1;
+    //     .modal__dialog {
+    //         transform: scale(1);
+    //     }
+    // }
+}

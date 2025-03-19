@@ -1,5 +1,5 @@
 'use strict'
-document.addEventListener('DOMContentLoaded', ()=> {
+document.addEventListener('DOMContentLoaded', ()=> {   
     //Выпадающее меню
     const listItem = document.querySelectorAll('.nav__list-item--menu'),
           listMenu = document.querySelectorAll('.nav__list-item--list');
@@ -224,5 +224,49 @@ document.addEventListener('DOMContentLoaded', ()=> {
         item.addEventListener('click', ()=> {
             item.classList.toggle('open')
         })
-    });      
+    });   
+    //modal 
+    const modal = document.querySelector('.modal');
+    const btnModal = document.querySelectorAll('[data-modal]');
+    
+    function removeModalActive() {
+        modal.classList.remove('open');
+        modal.classList.add('exit');
+        document.body.style.overflow = '';
+    }
+    function addModalActive() {
+        modal.classList.add('open');
+        modal.classList.remove('exit');
+        document.body.style.overflow = 'hidden'
+    };
+
+    btnModal.forEach(btn => {
+        btn.addEventListener('click', (e)=> {
+            addModalActive();
+        })
+    });
+    modal.addEventListener('click', (e)=> {
+        if(e.target === modal || e.target.classList.contains('modal__content-close')) {
+            removeModalActive();
+        };
+    });
+    window.addEventListener('keydown', (e)=> {
+        if(e.code === 'Escape' && modal.classList.contains('open')) {
+            removeModalActive();
+        }
+    });
+     //маска
+    const form = document.querySelector('form')
+    if(form) {
+         let selector = document.querySelector('#phone');
+         let phone = document.querySelector('#modal-phone');
+         let im = new Inputmask("+7(999)999-99-99");
+         if(selector) {
+            im.mask(selector);
+         }
+         if(phone) {
+            im.mask(phone);
+         }           
+         
+     }; 
 })
