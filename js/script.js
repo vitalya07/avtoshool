@@ -35,12 +35,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
        
     });
     // гамбургер и навигационное меню
-    const header = document.querySelector('.header'),
-          nav = document.querySelector('.nav'),
+    const menu = document.querySelectorAll('[data-menu]'),
+          nav = document.querySelectorAll('.nav'),
           hanburger = document.querySelector('.hamburger');
     hanburger.addEventListener('click', (e)=> {
-        header.classList.toggle('open');
-        nav.classList.toggle('open');
+        menu.forEach(menu => {
+            menu.classList.toggle('open');
+        })
+        nav.forEach(nav => {
+            nav.classList.toggle('open');
+        })
     });
     //slide 
     new Splide('#slider1', {
@@ -123,18 +127,18 @@ document.addEventListener('DOMContentLoaded', ()=> {
         breakpoints: {
             993: { 
                 perPage: 2, 
-                padding: '2rem',                
+                padding: '1rem',                
             },
             768: { 
-                perPage: 1,
-                padding: '5rem',  
+                perPage: 1, 
                 arrows: false,    
+                padding: '6rem', 
             },
             556: { 
-                padding: '3rem',      
+                padding: '1rem',      
             },
             450: { 
-                padding: '1.7rem',      
+                padding: '1rem',      
             },
         },
     }).mount();
@@ -145,19 +149,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
         pagination: false,
         breakpoints: {
             993: { 
-                perPage: 2, 
-                padding: '2rem',                
+                perPage: 1, 
+                padding: '1rem',   
+                gap: '20px'             
             },
             768: { 
                 perPage: 1,
-                padding: '5rem',  
+                // padding: '5rem',  
                 arrows: false,    
             },
             556: { 
-                padding: '3rem',      
+                padding: '1rem',      
             },
             450: { 
-                padding: '1.7rem',      
+                padding: '1rem',      
             },
         },
     }).mount();
@@ -169,18 +174,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
         breakpoints: {
             993: { 
                 perPage: 2, 
-                padding: '2rem',                
+                padding: '2rem', 
+                gap: '20px'               
             },
             768: { 
-                perPage: 1,
-                padding: '5rem',  
-                arrows: false,    
+                perPage: 1,   
             },
             556: { 
-                padding: '3rem',      
-            },
-            450: { 
-                padding: '1.7rem',      
+                arrows: false,     
+                gap: '1px',
+                padding: '0.2rem',
             },
         },
     }).mount();

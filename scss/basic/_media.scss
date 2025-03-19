@@ -143,6 +143,151 @@
             }
         }
     }
+    .price {
+        &__item {
+            padding: 20px 30px;
+            width: 390px;
+            &-title {
+                font-size: 20px;
+            }
+            &-box {
+                margin-bottom: 20px;
+                gap: 15px;
+                &--img {
+                    width: 101px;
+                    height: 100px;
+                }
+            }
+            &-tabs {
+                gap: 10px;
+                &--tab {
+                    font-size: 16px;
+                }
+            }
+            &-contents {
+                &--profit {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+    .students {
+        &__info {
+            max-width: 490px;
+            &-title {
+                font-size: 50px;
+            }
+            &-subtitle {
+                font-size: 20px;
+            }
+            &-box {
+                flex-direction: column;
+                &--item {
+                    width: 210px;
+                    height: 50px;
+                    padding: 10px;
+                }
+                &--img {
+                    width: 106px;
+                    height: 25px;
+                }
+                &--appraisal {
+                    margin-left: 15px;
+                }
+            }
+        }
+        &__feedback {
+            max-width: 450px;
+        }
+    }
+    .perks {
+        &__top {
+            gap: 10px;
+            &-title {
+                font-size: 30px;
+            }
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    .rights {
+        &__top {
+            &-title {
+                font-size: 30px;
+            }
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__item {
+            width: 450px;
+            height: 300px;   
+            &-el {
+                width: 100%;
+                &--name {
+                    font-size: 20px;
+                }
+                &--img {
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__left {
+            max-width: 100%;
+            min-height: 450px;
+            img { 
+                width: 100%;
+                height: 450px;
+            }
+        }
+        &__right {
+            max-width: 650px;
+            &-map {
+                width: 300px;
+                height: 265px;
+            }
+            &-block {
+                width: 310px;
+                height: 160px;
+                padding-top: 10px;
+                &--top {
+                    gap: 20px;
+                }
+                &--list {
+                    margin-left: 25px;                    
+                }
+                &--el {
+                    font-size: 14px;
+                }
+            }
+            &-box {
+                width: 310px;
+                height: 90px;
+                padding: 10px;
+                &--title {
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                }
+                &--text {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__name {
+            display: none;
+        }
+    }
 }
 @media (max-width: 993px) {
     .header {
@@ -354,6 +499,92 @@
             }
         }
     }
+    .price {
+        &__top {
+            align-items: center;
+            &-img {
+                width: 46px;
+                height: 45px;
+            }
+            &-title {
+                font-size: 30px;
+            }
+        }
+        &__items {
+            &-item {
+                padding: 6px 10px;
+                width: 345px;
+            }
+        }
+    }
+    .students {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__info {
+            max-width: 100%;
+            width: 100%;
+            &-box {
+                flex-direction: row;
+            }
+        }
+        &__feedback {
+            max-width: 100%;
+        }
+        &__videos {
+            &-video {
+                max-width: 320px;
+                min-height: 460px;
+                &--name {
+                    width: 230px;
+                    height: 25px;
+                    padding: 5px 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .rights {
+        &__top {
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__right {
+            &-title {
+                font-size: 30px;
+                text-align: center;
+            }
+            &-link {
+               justify-content: center;
+            }
+            &-wrapper {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+        &__name {
+            display: block;
+            font-size: 14px;
+            max-width: 210px;
+            margin-right: 40%;
+        }
+        &__time, &__phone {
+            display: none;
+        }
+        &__feedback {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 769px) {
@@ -452,6 +683,86 @@
             width: 100%;
             min-height: 180px;
             height: 180px;
+        }
+    }
+    .photo {
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .price {
+        &__items {
+            flex-wrap: wrap;
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+    .students {
+        padding: 0 15px 50px 15px;
+        &__container {
+            padding: 14px;
+        }
+        &__top {
+            &-img {
+                width: 50px;
+                height: 40px;
+            }
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+        }
+        &__info {
+            &-title {
+                font-size: 30px;
+            }
+            &-subtitle {
+                font-size: 16px;
+            }
+            &-box {
+                flex-direction: column;
+            }
+        }
+        &__feedback {
+            &-item {
+                &--img {
+                    width: 60px;
+                    height: 60px;
+                }
+                &--name {
+                    font-size: 16px;
+                }
+                &--date {
+                    font-size: 16px;
+                }
+                &--stars {
+                    margin-bottom: 10px;
+                }
+                &--recall {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__videos {
+            &-video {
+                max-width: 100%;
+                min-height: 660px;
+            }
+        }
+    }
+    .FAQ {
+        &__img {
+            display: none;
+        }
+    }
+    .footer {
+        &__logo {
+            max-width: 100px;
+            height: 45px;
+        }
+        &__name {
+            margin-right: 30%;
         }
     }
 }
@@ -678,6 +989,138 @@
             }
         }
     }
+    .photo {
+        &__title {
+            margin-left: 10px;
+        }
+        &__items {
+            margin-left: 10px;
+            &-item {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
+        &__splide {
+            margin-bottom: 10px;
+        }
+    }
+    .price {
+        &__top {
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+        }
+    }
+    .students {
+        &__wrapper {
+            margin-bottom: 2px;
+        }
+        &__feedback {
+            &-item {
+                padding: 10px;
+                &--user {
+                    gap: 10px;
+                }
+                &--img {
+                    width: 40px;
+                    height: 40px;
+                }
+                &--name {
+                    font-size: 14px;
+                }
+                &--date {
+                    font-size: 14px;
+                }
+                &--recall {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .perks {
+        &__top {
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+        }
+        &__information {
+            &-item {
+                &--name {
+                    font-size: 14px;
+                }
+                &--img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        &__img {
+            min-height: 300px;
+        }
+    }
+    .rights {
+        &__top {
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__item {
+            width: 90%;
+            height: 240px;
+        }
+    }
+    .questions {
+        &__title {
+            font-size: 20px;
+            letter-spacing: 0;
+        }
+        &__subtitle {
+            font-size: 16px;
+            text-align: center;
+        }
+        &__link {
+            &-icon {
+                width: 25px;
+                height: 25px;
+            }
+            &-number {
+                font-size: 20px;
+                letter-spacing: 0;;
+            }
+        }
+    }
+    .footer {
+        &__right {
+            &-title {
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+        }
+        &__logo {
+            max-width: 70px;
+            height: 30px;
+        }
+        &__name {
+            font-family: 'Onest', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;         
+            font-size: 12px;
+            margin-right: 0;
+            max-width: 170px;
+        }
+    }
 }
 @media (max-width: 450px) {
     .header {
@@ -767,13 +1210,56 @@
             }
         }
     }
-}
-@media (max-width: 380px) {
-    .header {
+    .photo {
+        &__items {
+            &-item {
+                padding: 5px;
+            }
+        }
+    }
+    .price {
+        &__top {
+            &-title {
+                font-size: 17px;
+            }
+        }
+        &__item {
+            width: 90%;
+            &-contents {
+                &--profit {
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+    .rights {
+        &__item {
+            width: 100%;
+            height: 250px;
+            &-el {
+                padding: 10px 15px;
+                height: 50px;
+                &--name {
+                    font-size: 16px;
+                }
+                &--img {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                        width: 4px;
+                        height: 7px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
         &__time, &__phone {
             display: none;
         }
     }
+}
+@media (max-width: 380px) {
     .carpark {
         &__img {
             min-height: 50px;
@@ -787,6 +1273,46 @@
             &-img {
                 width: 90px;
                 height: 40px;
+            }
+        }
+    }
+    .photo {
+        &__items {
+            &-item {
+                padding: 5px 2px;
+                font-size: 10px;
+            }
+        }
+    }
+    .price {
+        &__item {
+            padding: 10px;
+            &-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            &-box {
+                &--img {
+                    width: 90px;
+                    height: 88px;
+                }
+                &--name {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+            &-contents {
+                &--profit {
+                    margin-left: 30px;
+                }
+                &--wrapper {
+                    flex-wrap: wrap;
+                }
+            }
+            &-tabs {
+                &--tab {
+                    font-size: 14px;
+                }
             }
         }
     }
