@@ -72,72 +72,23 @@ document.addEventListener('DOMContentLoaded', ()=> {
     calcItem.forEach(item => {
         item.style.width = `100%`;
     });
-
-    function updateNextButtonState() {
-        let isAnyRadioChecked = false;
-        calcItem.forEach(group => {
-            const radios = group.querySelectorAll('input[type="radio"]');
-            radios.forEach(radio => {
-                if (radio.checked) {
-                    isAnyRadioChecked = true;
-                }
-            });
-        });
-        calcNext.disabled = !isAnyRadioChecked;
-    }
-    calcItem.forEach(group => {
-        const radios = group.querySelectorAll('input[type="radio"]');
-        radios.forEach(radio => {
-            radio.addEventListener('change', updateNextButtonState);
-        });
-    });
     calcPrev.addEventListener('click', () => {
         if (currentSlide > 0) {
             currentSlide--;
-            offset -= parseInt(calcWidth); // Уменьшаем смещение
+            offset -= parseInt(calcWidth);
             calcInner.style.transform = `translateX(-${offset}px)`;
-            checkSlider(); // Обновляем прогресс
+            checkSlider();
         }
     });
 
     calcNext.addEventListener('click', ()=> {
         if (currentSlide < calcItem.length - 1) {
             currentSlide++;
-            offset += parseInt(calcWidth); // Увеличиваем смещение
+            offset += parseInt(calcWidth);
             calcInner.style.transform = `translateX(-${offset}px)`;
-            checkSlider(); // Обновляем прогресс
-        }
-        
-        // calcInner.style.transform = `translateX(-${offset}px)`
-        // console.log(offset)
-    })
-    // calcNext.addEventListener('click', (e)=> {
-    //     if(offset == +calcWidth.slice(0, calcWidth.length -2) * (calcItem.length -1)) {
-    //         offset = 0
-    //     } else {
-    //         offset += +calcWidth.slice(0, calcWidth.length -2)
-    //     }
-        
-    //     calcInner.style.transform = `translateX(-${offset}px)`
-    //     checkSlider()
-    // });
-
-    // calcPrev.addEventListener('click', ()=> {
-    //     if (offset == 0) {
-    //         offset = +calcWidth.slice(0, calcWidth.length -2) * (calcItem.length -1)
-    //     } else {
-    //         offset -= +calcWidth.slice(0, calcWidth.length -2)
-    //     }
-       
-    //     calcInner.style.transform = `translateX(-${offset}px)`
-    //     checkSlider()
-    // })
-
-   
-    
-    
-
-
+            checkSlider();
+        }        
+    });   
 
     //slide 
     new Splide('#slider1', {
