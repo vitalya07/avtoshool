@@ -301,7 +301,10 @@
             display: none;
         }
         &__feedback {
-            display: none;
+            &-btn {
+                display: none;
+            }
+           
         }
     }
     .hamburger {
