@@ -81,9 +81,23 @@
     }
     &__right {
         max-width: 600px;
+        min-height: 531px;
         padding: 25px;
         background-color: $grayColor;
         border-radius: 16px;
+        &-wrapper {
+            overflow: hidden;
+        }
+        &-inner {
+            display: flex;
+            &--item {
+                width: 100%;
+                display: block;
+                // &.active {
+                //     display: block;
+                // }
+            }
+        }
         &-top {
             display: flex;
             align-items: start;
@@ -121,9 +135,29 @@
         &-arrow {
             width: 45px;
             height: 45px;
-            cursor: pointer;            
+            cursor: pointer;  
+            background-color: $blueColor;
+            border-radius: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 6px;
+                height: 16px;
+            }         
+            &--prev {
+                transform: rotate(-180deg);
+                transition: all .4s ease;
+                &:hover {
+                    background-color: $blueColor2;
+                }
+            }
             &--next {
+                transition: all .4s ease;
                 transform: rotate(180deg);
+                &:hover {
+                    background-color: $blueColor2;
+                }
             }
         }
         &-line {
@@ -146,6 +180,24 @@
                 font-size: 12px;
                 line-height: 20px;
                 color: $whiteColor;
+                transition: all .4s ease;
+            }
+        }
+        &-feedback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            &--item {
+                width: 60px;
+                height: 60px;
+            };
+            &--img {
+                width: 38px;
+                height: 38px;
+            }
+            &--name {
+                font-size: 16px;
             }
         }
     }
@@ -157,12 +209,6 @@
             justify-content: start;
             gap: 8px;
             margin-bottom: 10px;
-            &--input {
-                display: none;                
-                &:checked + .calc__chekboxs-item--label::before {
-                    background-color: $blueColor
-                }
-            }
             &--name {
                 font-family: 'Onest', sans-serif;
                 font-weight: 400;
@@ -170,20 +216,6 @@
                 line-height: 24px;
                 color: $darkColor;    
             }
-            &--label {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                &::before {
-                    content: '';
-                    width: 20px;
-                    height: 20px;
-                    border: 2px solid $blueColor;
-                    border-radius: 100%;
-                    margin-right: 10px;
-                }
-            }
         }
     }
-    
 }
