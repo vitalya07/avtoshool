@@ -85,19 +85,7 @@
         padding: 25px;
         background-color: $grayColor;
         border-radius: 16px;
-        &-wrapper {
-            overflow: hidden;
-        }
-        &-inner {
-            display: flex;
-            &--item {
-                width: 100%;
-                display: block;
-                // &.active {
-                //     display: block;
-                // }
-            }
-        }
+       
         &-top {
             display: flex;
             align-items: start;
@@ -118,13 +106,27 @@
                 color: $darkColor;
             }
         }
-        &-query {
-            font-family: 'Onest', sans-serif;
-            font-weight: 500;
-            font-size: 21px;
-            line-height: 100%;
-            color: $darkColor;
-            margin-bottom: 28px;
+        &-form {
+            margin-bottom: 70px;
+            &--title {
+                font-family: 'Onest', sans-serif;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 100%;
+                color: $darkColor;
+                margin-bottom: 28px;
+            }
+            &--label {
+                margin-bottom: 20px;
+                display: block;
+            }
+            &--span {
+                font-family: 'Onest', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $darkColor;
+            }
         }
         &-progress {
             display: flex;
