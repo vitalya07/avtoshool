@@ -33,7 +33,7 @@
     }
     &__item {
         width: 282px;
-        height: 244px;
+        min-height: 244px;
         background-color: $grayColor;
         padding: 32px 16px;
         border-radius: 16px;

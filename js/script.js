@@ -49,46 +49,46 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
     //calc
-    const calcItem = document.querySelectorAll('.calc__right-inner--item'), 
-          calcNext = document.querySelector('#next'),
-          calcPrev = document.querySelector('#prev'),
-          calcProgress = document.querySelector('.calc__right-line--bg'),
-          calcWrapper = document.querySelector('.calc__right-wrapper'),
-          calcInner = document.querySelector('.calc__right-inner'),
-          calcWidth = window.getComputedStyle(calcWrapper).width; 
-    let offset = 0; 
-    let currentSlide = 0;
+    // const calcItem = document.querySelectorAll('.calc__right-inner--item'), 
+    //       calcNext = document.querySelector('#next'),
+    //       calcPrev = document.querySelector('#prev'),
+    //       calcProgress = document.querySelector('.calc__right-line--bg'),
+    //       calcWrapper = document.querySelector('.calc__right-wrapper'),
+    //       calcInner = document.querySelector('.calc__right-inner'),
+    //       calcWidth = window.getComputedStyle(calcWrapper).width; 
+    // let offset = 0; 
+    // let currentSlide = 0;
 
-    function checkSlider() {
-        const totalSlides = calcItem.length;
-        const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;    
-        const roundedPercentage = Math.round(progressPercentage / 25) * 25;    
-        calcProgress.style.width = `${roundedPercentage}%`;
-        calcProgress.innerHTML = `${roundedPercentage}%`
-    }     
+    // function checkSlider() {
+    //     const totalSlides = calcItem.length;
+    //     const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;    
+    //     const roundedPercentage = Math.round(progressPercentage / 25) * 25;    
+    //     calcProgress.style.width = `${roundedPercentage}%`;
+    //     calcProgress.innerHTML = `${roundedPercentage}%`
+    // }     
 
-    calcInner.style.width = 100 * calcItem.length + '%';
+    // calcInner.style.width = 100 * calcItem.length + '%';
 
-    calcItem.forEach(item => {
-        item.style.width = `100%`;
-    });
-    calcPrev.addEventListener('click', () => {
-        if (currentSlide > 0) {
-            currentSlide--;
-            offset -= parseInt(calcWidth);
-            calcInner.style.transform = `translateX(-${offset}px)`;
-            checkSlider();
-        }
-    });
+    // calcItem.forEach(item => {
+    //     item.style.width = `100%`;
+    // });
+    // calcPrev.addEventListener('click', () => {
+    //     if (currentSlide > 0) {
+    //         currentSlide--;
+    //         offset -= parseInt(calcWidth);
+    //         calcInner.style.transform = `translateX(-${offset}px)`;
+    //         checkSlider();
+    //     }
+    // });
 
-    calcNext.addEventListener('click', ()=> {
-        if (currentSlide < calcItem.length - 1) {
-            currentSlide++;
-            offset += parseInt(calcWidth);
-            calcInner.style.transform = `translateX(-${offset}px)`;
-            checkSlider();
-        }        
-    });   
+    // calcNext.addEventListener('click', ()=> {
+    //     if (currentSlide < calcItem.length - 1) {
+    //         currentSlide++;
+    //         offset += parseInt(calcWidth);
+    //         calcInner.style.transform = `translateX(-${offset}px)`;
+    //         checkSlider();
+    //     }        
+    // });   
 
     //slide 
     new Splide('#slider1', {

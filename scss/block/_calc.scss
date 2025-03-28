@@ -7,7 +7,7 @@
         padding: 20px;
     }
     &__left {
-        width: 610px;
+        max-width: 610px;
         min-height: 531px;
         background-color: $grayColor;
         border-radius: 16px;
@@ -105,8 +105,8 @@
             gap: 24px;
             margin-bottom: 45px;
             &--img {
-                width: 66px;
-                height: 66px;
+                max-width: 66px;
+                max-height: 66px;
             }
             &--name {
                 max-width: 434px;

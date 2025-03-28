@@ -1,11 +1,11 @@
 .format {
-    padding: 0 15px 60px 15px;
+    padding: 0 15px;
     &__wrapper {
         @include wrapper;
     }
     &__item {
         background-color: $whiteColor;
-        padding: 32px 32px 43px 32px;
+        padding: 20px 32px;
         width: 334px;
         min-height: 334px;
         border-radius: 16px;
